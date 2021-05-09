@@ -15,7 +15,6 @@ import { PhishingPaypal } from './Pages/Phishing/PhishingPaypal';
 import { PhishingQuiz } from './Pages/Phishing/PhishingQuiz';
 import { PasswordsHome } from './Pages/Passwords/PasswordsHome';
 import { Security } from './Pages/Passwords/Security';
-import { Manager } from './Pages/Passwords/PasswordManager';
 import { PasswordsQuiz } from './Pages/Passwords/PasswordsQuiz';
 import { TwoFactorHome } from './Pages/TwoFactor/TwoFactorHome';
 import { TwoFactorIntro } from './Pages/TwoFactor/TwoFactorIntro';
@@ -67,9 +66,6 @@ function App() {
             </Route>
             <Route exact path='/Contrasenas/Seguridad'>
               <Security/>
-            </Route>
-            <Route exact path='/Contrasenas/Administrador'>
-              <Manager/>
             </Route>
             <Route exact path='/Contrasenas/Conocimientos'>
               <PasswordsQuiz/>
