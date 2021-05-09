@@ -1,0 +1,258 @@
+.App {
+  text-align: center;
+}
+
+.clr {
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.lightblue {
+  margin: auto;
+  float: left;
+  width: 50%;
+  height: 500px;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(0, 140, 255);
+  color: white;
+}
+
+.lightblue p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lightblue h1 {
+  padding-top: 50px;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.lightblue h1 span {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.verde {
+  margin: auto;
+  float: left;
+  width: 50%;
+  height: 500px;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(0, 185, 108);
+  /* background: rgb(57,48,203);
+  background: linear-gradient(90deg, rgba(57,48,203,1) 0%, rgba(0,249,91,1) 35%, rgba(81,163,180,1) 100%); */
+  color: white;
+}
+
+.verde p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lightgray {
+  margin: auto;
+  float: left;
+  width: 50%;
+  height: 300px;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.lightgray p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lightgray img {
+  justify-content: center;
+  max-height: 250px;
+}
+
+.white {
+  margin: auto;
+  float: left;
+  width: 50%;
+  height: 500px;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.white p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.white img {
+  max-width: 300px;
+}
+
+.white .hacker img{
+  max-height: 100%;
+  padding-bottom: 20px;
+}
+
+.white .safe img{
+  max-width: 70%;
+  padding-bottom: 20px;
+}
+
+.white .http img{
+  max-width: 70%;
+  padding: 20px;
+}
+
+.negro {
+  margin: auto;
+  float: left;
+  height: 300px;
+  width: 100%;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.negro p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.negro span {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.jumbotron h1{
+  color: black;
+}
+
+.blue{
+  height:500px;
+  border:1px solid #000;
+  margin:30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blue h1 {
+  color:green;
+}
+
+
+
+/* https://www.youtube.com/watch?v=91Q6RvKvd7o&ab_channel=OnlineTutorials */
+.whiteLeft {
+  position: relative;
+  /* width: 100; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whiteLeft .mytext {
+  position: relative;
+  /* max-width: 600px; */
+  /* max-width: 50%; */
+  width: 50%;
+}
+
+.whiteLeft .mytext h1 {
+  color: #333;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.whiteLeft .mytext h1 span {
+  color: red;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.whiteLeft .imgBox {
+  /* width: 600px; */
+  width: 50%;
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: right;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.whiteLeft .imgBox img {
+  max-width: 600px;
+}
+
+
+
+
+
+.whiteRight {
+  position: relative;
+  /* width: 100; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whiteRight .mytext {
+  position: relative;
+  /* max-width: 600px; */
+  /* max-width: 50%; */
+  width: 50%;
+  justify-content: right;
+}
+
+.whiteRight .mytext h1 {
+  color: #333;
+  font-size: 3em;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.whiteRight .mytext h1 span {
+  color: red;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.whiteRight .imgBox {
+  /* width: 600px; */
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  margin-top: 50px;
+}
+
+.whiteRight .imgBox img {
+  max-width: 600px;
+}
