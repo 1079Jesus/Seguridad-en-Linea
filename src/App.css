@@ -70,6 +70,52 @@ ul {
   vertical-align: middle;
 }
 
+.rojo {
+  margin: auto;
+  float: left;
+  word-wrap: break-word;
+  width: 50%;
+  min-height: 500px;
+  height:fit-content;
+  /* height: 500px;  */
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(197, 3, 3);
+  color: white;
+}
+
+.rojo p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.morado {
+  margin: auto;
+  float: left;
+  word-wrap: break-word;
+  width: 50%;
+  min-height: 500px;
+  height:fit-content;
+  /* height: 500px;  */
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(202, 0, 202);
+  color: white;
+}
+
+.morado p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .lightgray {
   margin: auto;
   float: left;
@@ -134,6 +180,18 @@ ul {
 .white .http img{
   max-width: 70%;
   padding: 20px;
+}
+
+.white .terminal img{
+  max-width: 80%;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.white .applepay img{
+  max-width: 80%;
+  padding: 20px;
+  padding-top: 80px;
 }
 
 .negro {
