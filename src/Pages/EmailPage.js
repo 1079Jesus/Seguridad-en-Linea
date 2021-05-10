@@ -124,7 +124,6 @@ export const EmailPage = () => {
                 <Breadcrumb.Item href="Contrasenas">Contraseñas</Breadcrumb.Item>
                 <Breadcrumb.Item href="DosFactores">Autenticación de Dos Factores</Breadcrumb.Item>
                 <Breadcrumb.Item href="Transacciones">Transacciones Seguras en Línea</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Privacidad en Línea</Breadcrumb.Item>
             </Breadcrumb>
         </>
     )

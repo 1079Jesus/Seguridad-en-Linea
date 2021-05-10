@@ -1,12 +1,19 @@
 import React from 'react';
-import { Button, Jumbotron } from 'react-bootstrap';
+import { Button, Jumbotron, Container, Row, Col } from 'react-bootstrap';
 import Navigbar from '../../Components/Navbar';
 import PasswordBread from './PasswordBread';
+import Side from "./sidebar";
+import TempNavbar from "./tempnavbar";
+import Main from "./main";
+import About from "./about";
+import Contact from "./contact";
+import './tempstyles.css';
+
 
 export const Installation = ()=> {
     return(
         <>
-            <Navigbar />
+            {/* <Navigbar />
             <Jumbotron>
                 <h1>Installación</h1>
                 <p>
@@ -14,9 +21,22 @@ export const Installation = ()=> {
                 </p>
                 <Button href='Conocimientos'> Próxima Página</Button>
             </Jumbotron>
+            <Container fluid>
+                <Row>
+                    <Col xs={2} id="sidebar-wrapper">      
+                      <Side />
+                    </Col>
+                    <Col  xs={10} id="page-content-wrapper">
+                        this is a test
+                    </Col> 
+                </Row>
+            </Container>
+            <PasswordBread /> */}
 
-            <PasswordBread />;
-
+            <TempNavbar />
+            <Main />
+            <About />
+            <Contact />
         </>
     )
 }

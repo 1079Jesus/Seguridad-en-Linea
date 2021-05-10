@@ -123,7 +123,7 @@ export const WebAuthenticity = ()=> {
             </div>
 
             <div className="clr"></div>
-            <Button className='mt-5' href='conocimientos'> Próxima Página</Button>
+            <Button className="mt-5 mb-5" href='conocimientos'> Próxima Página</Button>
             <WebBread />
         </>
     )
