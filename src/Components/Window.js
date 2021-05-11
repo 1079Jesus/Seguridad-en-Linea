@@ -1,5 +1,5 @@
 // https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_browser_window2
-import React, { useContext } from 'react';
+import React from 'react';
 import "./Window.css";
 
 export const Window = ( {Content} )=> {
