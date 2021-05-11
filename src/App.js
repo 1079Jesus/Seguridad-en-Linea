@@ -22,7 +22,6 @@ import { TwoFactorQuiz } from './Pages/TwoFactor/TwoFactorQuiz';
 import { TransactionsHome } from './Pages/Transactions/TransactionsHome';
 import { TransactionsIntro } from './Pages/Transactions/TransactionsIntro';
 import { TransactionsQuiz } from './Pages/Transactions/TransactionsQuiz';
-import { Installation } from './Pages/Passwords/Installation';
 import MyProgressBar from './Components/MyProgressBar';
 import { UserContext } from './Components/Temp';
 
@@ -69,9 +68,6 @@ function App() {
             </Route>
             <Route exact path='/Contrasenas/Conocimientos'>
               <PasswordsQuiz/>
-            </Route>
-            <Route exact path='/Contrasenas/Instalar'>
-              <Installation/>
             </Route>
             <Route exact path='/DosFactores'>
               <TwoFactorHome/>

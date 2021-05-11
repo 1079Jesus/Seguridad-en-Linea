@@ -14,13 +14,13 @@ ul {
   margin: auto;
   float: left;
   width: 50%;
-  min-height: 500px;
+  min-height: 600px;
   height:fit-content;
-  /* height: 500px; */
   line-height: 300px;
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
+  padding-top: 120px;
   background-color: rgb(0, 140, 255);
   color: white;
   overflow-wrap: break-word;
@@ -33,14 +33,35 @@ ul {
   vertical-align: middle;
 }
 
-/* .lightblue h1 {
-  padding-top: 50px;
-  font-size: 3em;
-  line-height: 1.2em;
-  font-weight: 500;
-} */
-
 .lightblue h1 span {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.skyblue {
+  margin: auto;
+  float: left;
+  width: 50%;
+  min-height: 600px;
+  height:fit-content;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  padding-top: 120px;
+  background-color: skyblue;
+  color: white;
+  overflow-wrap: break-word;
+}
+
+.skyblue p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skyblue h1 span {
   font-size: 1.3em;
   font-weight: 800;
 }
@@ -50,16 +71,14 @@ ul {
   float: left;
   word-wrap: break-word;
   width: 50%;
-  min-height: 500px;
+  min-height: 550px;
   height:fit-content;
-  /* height: 500px;  */
   line-height: 300px;
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
+  padding-top: 100px;
   background-color: rgb(0, 185, 108);
-  /* background: rgb(57,48,203);
-  background: linear-gradient(90deg, rgba(57,48,203,1) 0%, rgba(0,249,91,1) 35%, rgba(81,163,180,1) 100%); */
   color: white;
 }
 
@@ -77,12 +96,11 @@ ul {
   width: 50%;
   min-height: 500px;
   height:fit-content;
-  /* height: 500px;  */
   line-height: 300px;
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
-  background-color: rgb(197, 3, 3);
+  background-color: tomato;
   color: white;
 }
 
@@ -100,12 +118,11 @@ ul {
   width: 50%;
   min-height: 500px;
   height:fit-content;
-  /* height: 500px;  */
   line-height: 300px;
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
-  background-color: rgb(202, 0, 202);
+  background-color: mediumpurple;
   color: white;
 }
 
@@ -122,7 +139,6 @@ ul {
   width: 50%;
   min-height: 500px;
   height:fit-content;
-  /* height: 300px; */
   line-height: 300px;
   box-sizing: border-box;
   text-align: center;
@@ -145,8 +161,6 @@ ul {
   margin: auto;
   float: left;
   width: 50%;
-  /* min-height: 500px;
-  height:fit-content; */
   height: 500px;
   line-height: 300px;
   box-sizing: border-box;
@@ -197,9 +211,8 @@ ul {
 .negro {
   margin: auto;
   float: left;
-  min-height: 300px;
+  min-height: 450px;
   height:fit-content;
-  /* height: 300px; */
   width: 100%;
   line-height: 300px;
   box-sizing: border-box;
@@ -230,106 +243,30 @@ ul {
   color: black;
 }
 
-.blue{
-  height:500px;
-  border:1px solid #000;
-  margin:30px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.blue h1 {
-  color:green;
-}
-
-
-
-/* https://www.youtube.com/watch?v=91Q6RvKvd7o&ab_channel=OnlineTutorials */
-.whiteLeft {
-  position: relative;
-  /* width: 100; */
+.myscrollbar {
+  overflow: hidden;
+  background-color: lightgray;
+  position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  z-index: 100;
 }
 
-.whiteLeft .mytext {
-  position: relative;
-  /* max-width: 600px; */
-  /* max-width: 50%; */
-  width: 50%;
+.myscrollbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.whiteLeft .mytext h1 {
-  color: #333;
-  font-size: 3em;
-  line-height: 1.2em;
-  font-weight: 500;
+.myscrollbar a:hover {
+  background: #ddd;
+  color: black;
 }
 
-.whiteLeft .mytext h1 span {
-  color: red;
-  font-size: 1.3em;
-  font-weight: 800;
-}
-
-.whiteLeft .imgBox {
-  /* width: 600px; */
-  width: 50%;
-  display: flex;
-  /* justify-content: flex-end; */
-  justify-content: right;
-  padding-right: 50px;
-  margin-top: 50px;
-}
-
-.whiteLeft .imgBox img {
-  max-width: 600px;
-}
-
-
-
-
-
-.whiteRight {
-  position: relative;
-  /* width: 100; */
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.whiteRight .mytext {
-  position: relative;
-  /* max-width: 600px; */
-  /* max-width: 50%; */
-  width: 50%;
-  justify-content: right;
-}
-
-.whiteRight .mytext h1 {
-  color: #333;
-  font-size: 3em;
-  line-height: 1.2em;
-  font-weight: 500;
-}
-
-.whiteRight .mytext h1 span {
-  color: red;
-  font-size: 1.3em;
-  font-weight: 800;
-}
-
-.whiteRight .imgBox {
-  /* width: 600px; */
-  width: 50%;
-  display: flex;
-  justify-content: left;
-  padding-left: 50px;
-  margin-top: 50px;
-}
-
-.whiteRight .imgBox img {
-  max-width: 600px;
+.buffer {
+  height: 50px;
+  background-color: mediumpurple;
 }

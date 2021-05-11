@@ -23,7 +23,6 @@ export const Window = ( {Content} )=> {
                     </div>
                     </div>
                 </div>
-
                 <Content/>
             </div>
         </>

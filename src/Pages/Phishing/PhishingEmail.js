@@ -8,7 +8,10 @@ import "./PhishingEmail.css";
 import Navigbar from '../../Components/Navbar';
 import PhishingBread from './PhishingBread';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Popover from 'react-bootstrap/Popover';      
+import Popover from 'react-bootstrap/Popover';     
+import Scrollbar from "./scrollbar"; 
+import { useSpring, animated } from 'react-spring';
+import Buffer from "./Buffer";
 
 
 const popover = (
@@ -73,26 +76,40 @@ const remitente = (
 
 
 export const PhishingEjemplo = ()=> {
+    const fade = useSpring({
+        from: { opacity: 0}, 
+        opacity: 1, 
+        delay: 500,
+    });
     return(
         <>
             <Navigbar />
-            <div className="lightblue">
-                <h1>
-                    ¿Qué es un <span>correo electrónico phishing</span>?
-                </h1>
+            <Scrollbar />
+            <div className="lightblue" id="phishing1">
+                <animated.div style={fade}>
+                    <h1>
+                        ¿Qué es un <span>correo electrónico phishing</span>?
+                    </h1>
+                </animated.div>
             </div>
             <div className="lightblue">
-                <p>
-                    "El correo electrónico phishing es una técnica que consiste en engañar al usuario para robar información confidencial, claves de acceso, datos bancarios, entre otros, haciéndole creer que está en un sitio de confianza."
-                    <br></br>-Internet Ya
-                    <br></br>
-                    <br></br> Arriba está una definición para los correos electrónicos de phishing que demuestra lo peligroso que puede ser ser estafado por unos de estos e-mails. 
-                    <br></br> 
-                    <br></br>Por esta razón, en este módulo aprenderemos como identificar correos electrónicos phishing. 
-                </p>
+                <animated.div style={fade}>
+                    <p>
+                        "El correo electrónico phishing es una técnica que consiste en engañar al usuario para robar información confidencial, claves de acceso, datos bancarios, entre otros, haciéndole creer que está en un sitio de confianza."
+                        <br></br>-Internet Ya
+                        <br></br>
+                        <br></br> Arriba está una definición para los correos electrónicos de phishing que demuestra lo peligroso que puede ser ser estafado por unos de estos e-mails. 
+                        <br></br> 
+                        <br></br>Por esta razón, en este módulo aprenderemos como identificar correos electrónicos phishing. 
+                    </p>
+                </animated.div>
             </div>
+
+            {/* <Buffer /> */}
+            {/* <div className="buffer" id="phishing2">stuf</div> */}
+
             <Form>
-                <Form.Group as={Row} controlId="formPlaintextEmail">
+                <Form.Group as={Row} controlId="formPlaintextEmail" id="phishing2a">
                     <Form.Label column sm="2">
                     Para
                     </Form.Label>
@@ -101,7 +118,7 @@ export const PhishingEjemplo = ()=> {
                     </Col>
                 </Form.Group>
 
-                <Form.Group as={Row} controlId="formPlaintextEmail">
+                <Form.Group as={Row} controlId="formPlaintextEmail" id="phishing2b">
                     <Form.Label column sm="2">
                     <OverlayTrigger trigger="click" placement="right" overlay={remitente}>
                         <Button variant="success">De</Button>
@@ -112,7 +129,7 @@ export const PhishingEjemplo = ()=> {
                     </Col>
                 </Form.Group>
 
-                <Form.Group as={Row} controlId="formPlaintextEmail">
+                <Form.Group as={Row} controlId="formPlaintextEmail" id="phishing2c">
                     <Form.Label column sm="2">
                     Fecha
                     </Form.Label>
@@ -121,7 +138,7 @@ export const PhishingEjemplo = ()=> {
                     </Col>
                 </Form.Group>
 
-                <Form.Group as={Row} controlId="formPlaintextEmail">
+                <Form.Group as={Row} controlId="formPlaintextEmail" id="phishing2d">
                     <Form.Label column sm="2">
                     <OverlayTrigger trigger="click" placement="right" overlay={asunto}>
                         <Button variant="success">Asunto</Button>
@@ -132,7 +149,7 @@ export const PhishingEjemplo = ()=> {
                     </Col>
                 </Form.Group>
 
-                <Form.Group as={Row} controlId="formPlaintextEmail">
+                <Form.Group as={Row} controlId="formPlaintextEmail" id="phishing2e">
                     <Form.Label column sm="2">
                     Mensaje
                     </Form.Label>
@@ -155,15 +172,17 @@ export const PhishingEjemplo = ()=> {
                     </Col>
                 </Form.Group>
             </Form>
-
-            <div className="verde">
-                <p>
-                    Unos correos electrónicos de phishing contienen varios <strong><i>errores de gramática o de ortografía</i></strong>
-                    <br></br>
-                    <br></br>Esto es un poco más fácil de identificar pero la estrategía es que las personas que son engañadas a pesar de que existen muchos errores en el correo electrónico son más crédulas
-                    <br></br>
-                    <br></br>Entonces funciona como un <i>sistema de filtrado</i> para que los ladrones se enfoquen en esas personas que tienen más probabilidades de ser estafados
-                </p>
+            
+            <div className="verde" id="phishing3">
+                <animated.div style={fade}>
+                    <p>
+                        Unos correos electrónicos de phishing contienen varios <strong><i>errores de gramática o de ortografía</i></strong>
+                        <br></br>
+                        <br></br>Esto es un poco más fácil de identificar pero la estrategía es que las personas que son engañadas a pesar de que existen muchos errores en el correo electrónico son más crédulas
+                        <br></br>
+                        <br></br>Entonces funciona como un <i>sistema de filtrado</i> para que los ladrones se enfoquen en esas personas que tienen más probabilidades de ser estafados
+                    </p>
+                </animated.div>
             </div>
             <div className="white">
                 <div className="http">
@@ -172,26 +191,30 @@ export const PhishingEjemplo = ()=> {
             </div>
             <div className="clr"></div>   
             
-            <div className="lightblue">
-                <p>
-                    <strong>Sensación de Urgencia del Correo Electrónico</strong>
-                    <br></br>
-                    Una de las características típicas de los correos electrónicos de phishing es la <strong><i>sensación de urgencia</i></strong>
-                    <br></br>
-                    <br></br>El ejemplo de PayPal arriba crea una sensación de urgencia dandole <i>sólo 48 horas</i> para actuar y de no hacerlo, <i>"su cuenta será cerrada"</i>
-                </p>
+            <div className="morado" id="phishing4">
+                <animated.div style={fade}>
+                    <p>
+                        <strong>Sensación de Urgencia del Correo Electrónico</strong>
+                        <br></br>
+                        Una de las características típicas de los correos electrónicos de phishing es la <strong><i>sensación de urgencia</i></strong>
+                        <br></br>
+                        <br></br>El ejemplo de PayPal arriba crea una sensación de urgencia dandole <i>sólo 48 horas</i> para actuar y de no hacerlo, <i>"su cuenta será cerrada"</i>
+                    </p>
+                </animated.div>
             </div>
-            <div className="lightblue">
-                <p>
-                    Sí, es posible que una empresa intente contactarlo por una cosa urgente pero también tienen <i>otras maneras de comunicarse</i> con usted
-                    <br></br>
-                    <br></br>Pero también le darían <i>más de 48 horas</i> por si acaso usted no puede responderles antes
-                    <br></br>
-                    <br></br>Entonces cuando tenga duda de si algo es real o no, la mejor cosa que puede hacer es <i>contactar a la empresa <strong>directamente</strong></i> usando la información de contacto de su página y no la del correo electrónico 
-                </p>
+            <div className="morado">
+                <animated.div style={fade}>
+                    <p>
+                        Sí, es posible que una empresa intente contactarlo por una cosa urgente pero también tienen <i>otras maneras de comunicarse</i> con usted
+                        <br></br>
+                        <br></br>Pero también le darían <i>más de 48 horas</i> por si acaso usted no puede responderles antes
+                        <br></br>
+                        <br></br>Entonces cuando tenga duda de si algo es real o no, la mejor cosa que puede hacer es <i>contactar a la empresa <strong>directamente</strong></i> usando la información de contacto de su página y no la del correo electrónico 
+                    </p>
+                </animated.div>
             </div>
             <div className="clr"></div>  
-            <Button className='mt-5' href='./Conocimientos'> Próxima Página</Button>
+            <Button className="mt-5 mb-5" href='./Conocimientos'> Próxima Página</Button>
             <PhishingBread />
         </>
     )

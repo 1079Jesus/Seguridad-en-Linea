@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export const Navigbar = ()=> {
     return(
         <>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" sticky='top'>
                 <Navbar.Brand href="..">Seguridad en Línea</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -19,9 +19,6 @@ export const Navigbar = ()=> {
                         <NavDropdown.Item href="../Contrasenas">Contrasenas</NavDropdown.Item>
                         <NavDropdown.Item href="../DosFactores">Autenticación de Dos Factores</NavDropdown.Item>
                         <NavDropdown.Item href="../Transacciones">Transacciones Seguras en Línea</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Privacidad en Línea</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#">Separated link</NavDropdown.Item>
                     </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
