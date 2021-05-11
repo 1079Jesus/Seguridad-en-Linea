@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Jumbotron, Breadcrumb} from 'react-bootstrap';
+import { Button, Jumbotron } from 'react-bootstrap';
 import Navigbar from '../../Components/Navbar';
 import { useSpring, animated } from 'react-spring';
 import PasswordBread from './PasswordBread';
