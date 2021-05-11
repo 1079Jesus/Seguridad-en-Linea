@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React from 'react';
 import './App.css';
 import { EmailPage } from './Pages/EmailPage';
 import {
@@ -22,20 +22,12 @@ import { TwoFactorQuiz } from './Pages/TwoFactor/TwoFactorQuiz';
 import { TransactionsHome } from './Pages/Transactions/TransactionsHome';
 import { TransactionsIntro } from './Pages/Transactions/TransactionsIntro';
 import { TransactionsQuiz } from './Pages/Transactions/TransactionsQuiz';
-import MyProgressBar from './Components/MyProgressBar';
-import { UserContext } from './Components/Temp';
 
 function App() {
-  const [value, setValue] = useState(0);
-
-  // const myValue = useMemo(() => ({value, setValue}), [value, setValue]);
-
-
   return (
     <div className="App">
       <Router>
         <Switch>
-          <UserContext.Provider value={{ value, setValue }}> 
             <Route exact path='/'>
               <EmailPage />
             </Route>
@@ -87,7 +79,6 @@ function App() {
             <Route exact path='/Transacciones/Conocimientos'>
               <TransactionsQuiz/>
             </Route>
-          </UserContext.Provider>
         </Switch>
       </Router>
     </div>
