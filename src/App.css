@@ -1,0 +1,272 @@
+.App {
+  text-align: center;
+}
+
+.clr {
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.lightblue {
+  margin: auto;
+  float: left;
+  width: 50%;
+  min-height: 600px;
+  height:fit-content;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  padding-top: 120px;
+  background-color: rgb(0, 140, 255);
+  color: white;
+  overflow-wrap: break-word;
+}
+
+.lightblue p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lightblue h1 span {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.skyblue {
+  margin: auto;
+  float: left;
+  width: 50%;
+  min-height: 600px;
+  height:fit-content;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  padding-top: 120px;
+  background-color: skyblue;
+  color: white;
+  overflow-wrap: break-word;
+}
+
+.skyblue p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.skyblue h1 span {
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+.verde {
+  margin: auto;
+  float: left;
+  word-wrap: break-word;
+  width: 50%;
+  min-height: 550px;
+  height:fit-content;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  padding-top: 100px;
+  background-color: rgb(0, 185, 108);
+  color: white;
+}
+
+.verde p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rojo {
+  margin: auto;
+  float: left;
+  word-wrap: break-word;
+  width: 50%;
+  min-height: 500px;
+  height:fit-content;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: tomato;
+  color: white;
+}
+
+.rojo p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.morado {
+  margin: auto;
+  float: left;
+  word-wrap: break-word;
+  width: 50%;
+  min-height: 500px;
+  height:fit-content;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: mediumpurple;
+  color: white;
+}
+
+.morado p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lightgray {
+  margin: auto;
+  float: left;
+  width: 50%;
+  min-height: 500px;
+  height:fit-content;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.lightgray p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.lightgray img {
+  justify-content: center;
+  max-height: 250px;
+}
+
+.white {
+  margin: auto;
+  float: left;
+  width: 50%;
+  height: 500px;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.white p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.white .twofactor img {
+  padding: 20px;
+  padding-top: 60px;
+  max-width: 100%;
+}
+
+.white .hacker img{
+  max-height: 100%;
+  padding-bottom: 20px;
+}
+
+.white .safe img{
+  max-width: 70%;
+  padding-bottom: 20px;
+}
+
+.white .http img{
+  max-width: 70%;
+  padding: 20px;
+}
+
+.white .terminal img{
+  max-width: 80%;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.white .applepay img{
+  max-width: 80%;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+.negro {
+  margin: auto;
+  float: left;
+  min-height: 450px;
+  height:fit-content;
+  width: 100%;
+  line-height: 300px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.negro p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.negro span {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.negro ul li a{
+  color: lightgray;
+}
+
+.jumbotron h1{
+  color: black;
+}
+
+.myscrollbar {
+  overflow: hidden;
+  background-color: lightgray;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.myscrollbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.myscrollbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.buffer {
+  height: 50px;
+  background-color: mediumpurple;
+}
