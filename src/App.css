@@ -14,7 +14,7 @@ ul {
   margin: auto;
   float: left;
   width: 50%;
-  min-height: 600px;
+  min-height: 610px;
   height:fit-content;
   line-height: 300px;
   box-sizing: border-box;
@@ -42,7 +42,7 @@ ul {
   margin: auto;
   float: left;
   width: 50%;
-  min-height: 600px;
+  min-height: 610px;
   height:fit-content;
   line-height: 300px;
   box-sizing: border-box;
@@ -71,7 +71,7 @@ ul {
   float: left;
   word-wrap: break-word;
   width: 50%;
-  min-height: 550px;
+  min-height: 610px;
   height:fit-content;
   line-height: 300px;
   box-sizing: border-box;
@@ -94,7 +94,7 @@ ul {
   float: left;
   word-wrap: break-word;
   width: 50%;
-  min-height: 500px;
+  min-height: 610px;
   height:fit-content;
   line-height: 300px;
   box-sizing: border-box;
@@ -116,7 +116,7 @@ ul {
   float: left;
   word-wrap: break-word;
   width: 50%;
-  min-height: 500px;
+  min-height: 610px;
   height:fit-content;
   line-height: 300px;
   box-sizing: border-box;
@@ -137,7 +137,7 @@ ul {
   margin: auto;
   float: left;
   width: 50%;
-  min-height: 500px;
+  min-height: 610px;
   height:fit-content;
   line-height: 300px;
   box-sizing: border-box;
@@ -161,7 +161,7 @@ ul {
   margin: auto;
   float: left;
   width: 50%;
-  height: 500px;
+  height: 610px;
   line-height: 300px;
   box-sizing: border-box;
   text-align: center;
@@ -175,37 +175,10 @@ ul {
   vertical-align: middle;
 }
 
-.white .twofactor img {
-  padding: 20px;
-  padding-top: 60px;
+.white img {
   max-width: 100%;
-}
-
-.white .hacker img{
-  max-height: 100%;
-  padding-bottom: 20px;
-}
-
-.white .safe img{
-  max-width: 70%;
-  padding-bottom: 20px;
-}
-
-.white .http img{
-  max-width: 70%;
-  padding: 20px;
-}
-
-.white .terminal img{
-  max-width: 80%;
-  padding: 20px;
-  padding-top: 60px;
-}
-
-.white .applepay img{
-  max-width: 80%;
-  padding: 20px;
-  padding-top: 80px;
+  max-height: 610px;
+  padding: 40px;
 }
 
 .negro {
